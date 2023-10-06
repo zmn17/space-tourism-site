@@ -118,19 +118,38 @@ body {
     line-height: 32px;
 }
 
+.outer-container {
+    display: inline-block;
+    position: fixed;
+    top: 50.2%;
+    left: 67.2%;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
 .explore {
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 60%;
+    top: 55%;
     left: 70%;
     background: #fff;
-    width: 274px;
-    height: 274px;
+    width: 260px;
+    height: 264px;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 2;
+    transition: border 0.3s ease, background-color 0.3s ease;
 }
+
+
+.outer-container:hover {
+    border: 90px solid rgba(255, 254, 254, 0.3);
+}
+
 
 .explore h1{
     text-align: center;
@@ -142,3 +161,6 @@ body {
     line-height: normal;
     letter-spacing: 2px;
 }
+
+
+
