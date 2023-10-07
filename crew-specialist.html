@@ -5,23 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Space tourism website</title>
 </head>
-<body>
+<body id="specialist">
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="./asset/shared/logo.svg" alt="">
+    </a>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <div class="rectangle"></div>
 
-  02 Meet your crew
+    <div class="navbar">
+      <nav class="nav">
+        <a href="index.html">00 HOME</a>
+        <a href="destination-moon.html">01 DESTINATION</a>
+        <a href="crew-commander.html">02 CREW</a>
+        <a href="technology-vehicle.html">03 TECHNOLOGY</a>
+      </nav>
+    </div>
 
-  Mission Specialist
-  Mark Shuttleworth
+  </header>
 
-  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
-  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
-  African to travel to space as a space tourist.
+  <section class="sec-1"">
+    
+    <div class="title-con crew-title-con">
+      <p class="intro-title"><span class="num-title">02</span>MEET YOUR CREW</p>
+    </div>
+
+    <div class="text-content crew-text">
+      <span class="role">MISSION SPECIALIST</span>
+      <h1 class="title crew-title">MARK SHUTTLEWORTH</h1>
+      <p class="content">
+        Mark Richard Shuttleworth is the founder and CEO of Canonical, 
+        the company behind the Linux-based Ubuntu operating system. 
+        Shuttleworth became the first South African to travel to space as a space tourist.
+      </p>
+    </div>
+
+    <div class="crew-nav">
+      <svg xmlns="http://www.w3.org/2000/svg" width="132" height="15" viewBox="0 0 132 15" fill="none">
+        <circle cx="46.5" cy="7.5" r="7.5" fill="white"/>
+        <circle opacity="0.174363" cx="7.5" cy="7.5" r="7.5" fill="white"/>
+        <circle opacity="0.174363" cx="85.5" cy="7.5" r="7.5" fill="white"/>
+        <circle opacity="0.174363" cx="124.5" cy="7.5" r="7.5" fill="white"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="crew-pic">
+    <div class="pic"></div>
+  </section>
 </body>
 </html>

@@ -181,20 +181,21 @@ body {
 
 .title-con {
     width: 445px;
+    position: fixed;
+    top: 27%;
+    left: 11%;
+    
 }
 
 .intro-title {
     color: #fff;
-    position: fixed;
-    top: 27%;
-    left: 15%;
-    font-size: 28px;
     width: 100%;
+    font-size: 28px;
 }
 
 .num-title {
     opacity: 0.5;
-    margin-right: 1.2%;
+    margin-right: 5%;
 }
 
 .moon-pic,
@@ -204,16 +205,17 @@ body {
     position: fixed;
     top: 42%;
     left: 15%;
-    width: 500px;
-    height: 500px;
-    background-size: 75%;
+    width: 450px;
+    height: 450px;
 }
 
 .moon-pic {
     background: url('./asset/destination/image-moon.png') no-repeat;
+    background-size: 72%;
 }
 
-.sec-2, .sec-2 .text-content {
+.sec-2,
+.sec-2 .text-content {
     position: fixed;
     top: 32%;
     left: 50%;
@@ -228,7 +230,7 @@ body {
     backdrop-filter: none;
     justify-content: flex-start;
     gap: 5%;
-    margin-left: 16%;
+    
 }
 
 .sec-2 .navbar .nav a::before {
@@ -236,8 +238,8 @@ body {
 }
 
 .sec-2 .text-content {
-    top: 42%;
-    left: 56%;
+    top: 44%;
+    left: 51%;
 }
 
 .sec-2 .text-content .title {
@@ -246,8 +248,8 @@ body {
 
 .sec-2 hr {
     position: fixed;
-    top: 74%;
-    left: 56%;
+    top: 77%;
+    left: 51%;
     height: 1px;
     width: 444px;
     opacity: 0.2515;
@@ -255,8 +257,8 @@ body {
 
 .travel-time {
     position: fixed;
-    top: 77%;
-    left: 56%;
+    top: 79.5%;
+    left: 51%;
     display: flex;
     gap: 20%;
     width: 444px;
@@ -291,13 +293,87 @@ body {
 
 .mars-pic {
     background: url('./asset/destination/image-mars.png') no-repeat;
+    background-size: 72%;
     
 }
 
 .europa-pic {
     background: url('./asset/destination/image-europa.png') no-repeat;
+    background-size: 72%;
 }
 
 .titan-pic {
     background: url('./asset/destination/image-titan.png') no-repeat;
+    background-size: 72%;
+}
+
+#commander,
+#engineer,
+#pilot,
+#specialist {
+    background: url('./asset/crew/background-crew-desktop.jpg')  lightgray 0px 0px / 100% 100% no-repeat;
+}
+
+
+.text-content span {
+    color: white;
+    font-family: 'Bellefair', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+}
+
+.crew-text .crew-title {
+    font-size: 3.5rem;
+}
+
+.crew-title-con,
+.crew-text{
+    left: 11%;
+}
+
+
+.crew-text .crew-title {
+    margin-top: 2%;
+}
+
+#commander .crew-pic .pic {
+    background: url('./asset/crew/image-douglas-hurley.png') no-repeat;
+    background-size: 80%;
+}
+
+#specialist .crew-pic .pic {
+    background: url('./asset/crew/image-mark-shuttleworth.png') no-repeat;
+    background-size: 75%;
+}
+
+#pilot .crew-pic .pic {
+    background: url('./asset/crew/image-victor-glover.png') no-repeat;
+    background-size: 85%;
+    top: 33%;
+}
+
+#engineer .crew-pic .pic {
+    background: url('./asset/crew/image-anousheh-ansari.png') no-repeat;
+    top: 30%;
+    left: 52%;
+}
+
+.crew-pic .pic {
+    width: 568px;
+    height: 712px;
+    position: fixed;
+    top: 27%;
+    left: 60%;
+}
+
+.crew-nav {
+    position: fixed;
+    top: 90%;
+    left: 11%;
+    width: 130px;
+    height: 15px;
+    cursor: pointer;
 }
