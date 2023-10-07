@@ -151,7 +151,7 @@ body {
 
 
 .outer-container:hover {
-    border: 90px solid rgba(255, 254, 254, 0.3);
+    border: 90px solid #fffefe4d;
 }
 
 
@@ -315,7 +315,8 @@ body {
 }
 
 
-.text-content span {
+.text-content .role,
+.text-content .tech {
     color: white;
     font-family: 'Bellefair', sans-serif;
     font-size: 32px;
@@ -325,19 +326,16 @@ body {
     opacity: 0.5;
 }
 
-.crew-text .crew-title {
+.crew-sec-1 .text-content .title {
     font-size: 3.5rem;
+    margin-top: 2%;
 }
 
-.crew-title-con,
-.crew-text{
+.crew-sec-1 .title-con,
+.crew-sec-1 .text-content{
     left: 11%;
 }
 
-
-.crew-text .crew-title {
-    margin-top: 2%;
-}
 
 #commander .crew-pic .pic {
     background: url('./asset/crew/image-douglas-hurley.png') no-repeat;
@@ -376,4 +374,79 @@ body {
     width: 130px;
     height: 15px;
     cursor: pointer;
+}
+
+#vehicle,
+#spaceport,
+#capsule {
+    background: url('./asset/technology/background-technology-desktop.jpg') no-repeat;
+}
+
+.text-content .tech {
+    font-size: 1rem;
+    color: #d0d6f9;
+    opacity: 100%;
+    letter-spacing: 2.7px;
+}
+
+.tech-sec-1 .text-content {
+    display: flex;
+    gap: 6%;
+    left: 9%;
+    width: 700px;
+
+}
+
+.tech-sec-1 .text-content .tech-nav nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    height: 265px;
+    gap: 17%;
+}
+
+
+.text-content .tech-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fffefe4d;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Bellefair', sans-serif;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+#vehicle .tech-pic .pic {
+    background: url('./asset/technology/image-launch-vehicle-portrait.jpg') no-repeat;
+    background-size: 82%;
+}
+
+#spaceport .tech-pic .pic {
+    background: url('./asset/technology/image-spaceport-portrait.jpg') no-repeat;
+    background-size: 82%;
+}
+
+#capsule .tech-pic .pic {
+    background: url('./asset/technology/image-space-capsule-portrait.jpg') no-repeat;
+    background-size: 82%;
+    left: 69.2%;
+}
+
+.tech-pic .pic {
+    width: 552px;
+    height: 500px;
+    position: fixed;
+    top: 35%;
+    left: 70%; 
 }
