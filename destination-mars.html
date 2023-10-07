@@ -5,33 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Space tourism website</title>
 </head>
-<body>
+<body id="mars">
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="./asset/shared/logo.svg" alt="">
+    </a>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <div class="rectangle"></div>
 
-  01 Pick your destination
+    <div class="navbar">
+      <nav class="nav">
+        <a href="index.html">00 HOME</a>
+        <a href="destination-moon.html">01 DESTINATION</a>
+        <a href="crew-commander.html">02 CREW</a>
+        <a href="technology-vehicle.html">03 TECHNOLOGY</a>
+      </nav>
+    </div>
 
-  Moon
-  Mars
-  Europa
-  Titan
+  </header>
 
-  Mars
+  <section class="sec-1"">
+    
+    <div class="title-con">
+      <p class="intro-title"><span class="num-title">01</span>PICK YOUR DESTINATION</p>
+    </div>
 
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
+    <div class="mars-pic">
+    </div>
+  </section>
 
-  Avg. distance
-  225 mil. km
+  <section class="sec-2">
+    <div class="navbar">
+      <nav class="nav">
+        <a href="destination-moon.html">MOON</a>
+        <a href="destination-mars.html">MARS</a>
+        <a href="destination-europa.html">EUROPA</a>
+        <a href="destination-titan.html">TITAN</a>
+      </nav>
+    </div>
 
-  Est. travel time
-  9 months
+    <div class="text-content">
+      <h1 class="title">MARS</h1>
+      <p class="content">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+    </div>
+    
+    <hr>
+
+    <div class="travel-time">
+
+      <div class="distance">
+        <h6 class="dis-title">AVG. DISTNACE</h6>
+        <p class="km">225 MIL. KM</p>
+      </div>
+
+      <div class="time">
+        <h6 class="tim-title">EST. TRAVEL TIME</h6>
+        <p class="days">9 MONTHS</p>
+      </div>
+
+    </div>
+  </section>
 </body>
 </html>
